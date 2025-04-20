@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saga Harry Potter</title>
+  <title>Coleção de Filmes</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans flex flex-col items-center justify-center min-h-screen py-6 px-4">
@@ -19,58 +19,46 @@
     </iframe>
   </div>
 
-  <div class="flex gap-4 mb-6">
-    <button onclick="anterior()" class="bg-indigo-600 hover:bg-indigo-500 px-6 py-2 text-white font-semibold rounded shadow transition">⬅️ Anterior</button>
-    <button onclick="proximo()" class="bg-indigo-600 hover:bg-indigo-500 px-6 py-2 text-white font-semibold rounded shadow transition">➡️ Próximo</button>
-  </div>
+  <div class="w-full max-w-5xl">
+    <h2 class="text-xl font-semibold mb-2 text-center">Harry Potter</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-center mb-6">
+      <li><button onclick="irPara('tt0241527', 'Harry Potter e a Pedra Filosofal')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Pedra Filosofal</button></li>
+      <li><button onclick="irPara('tt0295297', 'Harry Potter e a Câmara Secreta')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Câmara Secreta</button></li>
+      <li><button onclick="irPara('tt0304141', 'Harry Potter e o Prisioneiro de Azkaban')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Prisioneiro de Azkaban</button></li>
+      <li><button onclick="irPara('tt0330373', 'Harry Potter e o Cálice de Fogo')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Cálice de Fogo</button></li>
+      <li><button onclick="irPara('tt0373889', 'Harry Potter e a Ordem da Fênix')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Ordem da Fênix</button></li>
+      <li><button onclick="irPara('tt0417741', 'Harry Potter e o Enigma do Príncipe')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Enigma do Príncipe</button></li>
+      <li><button onclick="irPara('tt0926084', 'Harry Potter e as Relíquias da Morte – Parte 1')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Relíquias Parte 1</button></li>
+      <li><button onclick="irPara('tt1201607', 'Harry Potter e as Relíquias da Morte – Parte 2')" class="bg-purple-800 hover:bg-purple-700 w-full py-2 rounded">Relíquias Parte 2</button></li>
+    </ul>
 
-  <div class="w-full max-w-4xl">
-    <h2 class="text-xl font-semibold mb-2 text-center">Selecionar Filme</h2>
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-center">
-      <li><button onclick="irPara(0)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Pedra Filosofal</button></li>
-      <li><button onclick="irPara(1)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Câmara Secreta</button></li>
-      <li><button onclick="irPara(2)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Prisioneiro de Azkaban</button></li>
-      <li><button onclick="irPara(3)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Cálice de Fogo</button></li>
-      <li><button onclick="irPara(4)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Ordem da Fênix</button></li>
-      <li><button onclick="irPara(5)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Enigma do Príncipe</button></li>
-      <li><button onclick="irPara(6)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Relíquias Parte 1</button></li>
-      <li><button onclick="irPara(7)" class="bg-gray-800 hover:bg-gray-700 w-full py-2 rounded">Relíquias Parte 2</button></li>
+    <h2 class="text-xl font-semibold mb-2 text-center">John Wick</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-center mb-6">
+      <li><button onclick="irPara('tt2911666', 'John Wick: De Volta ao Jogo')" class="bg-red-700 hover:bg-red-600 w-full py-2 rounded">John Wick 1</button></li>
+      <li><button onclick="irPara('tt4425200', 'John Wick: Um Novo Dia para Matar')" class="bg-red-700 hover:bg-red-600 w-full py-2 rounded">John Wick 2</button></li>
+      <li><button onclick="irPara('tt6146586', 'John Wick 3: Parabellum')" class="bg-red-700 hover:bg-red-600 w-full py-2 rounded">John Wick 3</button></li>
+      <li><button onclick="irPara('tt10366206', 'John Wick 4: Baba Yaga')" class="bg-red-700 hover:bg-red-600 w-full py-2 rounded">John Wick 4</button></li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-2 text-center">Toy Story & Shrek</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-center mb-6">
+      <li><button onclick="irPara('tt0114709', 'Toy Story (1995)')" class="bg-yellow-600 hover:bg-yellow-500 w-full py-2 rounded">Toy Story</button></li>
+      <li><button onclick="irPara('tt0120363', 'Toy Story 2 (1999)')" class="bg-yellow-600 hover:bg-yellow-500 w-full py-2 rounded">Toy Story 2</button></li>
+      <li><button onclick="irPara('tt0435761', 'Toy Story 3 (2010)')" class="bg-yellow-600 hover:bg-yellow-500 w-full py-2 rounded">Toy Story 3</button></li>
+      <li><button onclick="irPara('tt1979376', 'Toy Story 4 (2019)')" class="bg-yellow-600 hover:bg-yellow-500 w-full py-2 rounded">Toy Story 4</button></li>
+      <li><button onclick="irPara('tt0126029', 'Shrek (2001)')" class="bg-green-700 hover:bg-green-600 w-full py-2 rounded">Shrek</button></li>
+      <li><button onclick="irPara('tt0298148', 'Shrek 2 (2004)')" class="bg-green-700 hover:bg-green-600 w-full py-2 rounded">Shrek 2</button></li>
+      <li><button onclick="irPara('tt0413267', 'Shrek Terceiro (2007)')" class="bg-green-700 hover:bg-green-600 w-full py-2 rounded">Shrek 3</button></li>
+      <li><button onclick="irPara('tt0892791', 'Shrek Para Sempre (2010)')" class="bg-green-700 hover:bg-green-600 w-full py-2 rounded">Shrek 4</button></li>
     </ul>
   </div>
 
   <script>
-    const filmes = [
-      { titulo: "Harry Potter e a Pedra Filosofal", imdb: "tt0241527" },
-      { titulo: "Harry Potter e a Câmara Secreta", imdb: "tt0295297" },
-      { titulo: "Harry Potter e o Prisioneiro de Azkaban", imdb: "tt0304141" },
-      { titulo: "Harry Potter e o Cálice de Fogo", imdb: "tt0330373" },
-      { titulo: "Harry Potter e a Ordem da Fênix", imdb: "tt0373889" },
-      { titulo: "Harry Potter e o Enigma do Príncipe", imdb: "tt0417741" },
-      { titulo: "Harry Potter e as Relíquias da Morte – Parte 1", imdb: "tt0926084" },
-      { titulo: "Harry Potter e as Relíquias da Morte – Parte 2", imdb: "tt1201607" }
-    ];
-
-    let atual = 0;
-
-    function atualizarFilme() {
-      document.getElementById("player").src = `https://superembeds.com/embed2/${filmes[atual].imdb}`;
-      document.getElementById("titulo").textContent = filmes[atual].titulo;
-    }
-
-    function proximo() {
-      atual = (atual + 1) % filmes.length;
-      atualizarFilme();
-    }
-
-    function anterior() {
-      atual = (atual - 1 + filmes.length) % filmes.length;
-      atualizarFilme();
-    }
-
-    function irPara(index) {
-      atual = index;
-      atualizarFilme();
+    function irPara(imdb, titulo) {
+      document.getElementById("player").src = `https://superembeds.com/embed2/${imdb}`;
+      document.getElementById("titulo").textContent = titulo;
     }
   </script>
+
 </body>
 </html>
